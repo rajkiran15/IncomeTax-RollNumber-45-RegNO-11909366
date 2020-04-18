@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <!--NavBar -->
+      <div class="parent">
+          <div class="wrapper" >  
+            <div class="container">
+                 <div class="leftNav">
+                    <a href="#">Income<span>Tax</span></a>
+                 </div>
+                 <div class="rightNav">
+                     <a href="#">ABOUT US</a>
+                 </div>
+                 <div class="rightNav">
+                     <a href="#">FEEDBACK</a>
+                 </div>
+                 <div class="rightNav">
+                     <a href="#">ACCESSIBILITY</a>
+                 </div>
+                 <div class="rightNav">
+                     <a href="#">CONTACT US</a>
+                 </div>
+            </div>
+          </div>
+          
+        <!--ImportantNews-->
+          
+          
+          
+        <!--NewsDetails-->
+          
+       <div class="main">   
+          <div class="mainnews">
+               <div class="login">
+                   <span>Login?</span>
+                   <form>
+                       <input type="email" placeholder="Enter Your Email" />
+                        <input type="password" placeholder="Enter Your Password" />
+                       <input  type="submit" class="submit">
+                       <input type="reset" class="reset">
+                    </form>
+                   <a href="#">Forgotten password?</a>
+              </div>
+              
+               <div class="newsUpdate">
+                   <span>Quick Links</span>
+                   <p>Finance Minister announces several relief measures relating to Statutory and Regulatory compliance matters across Sectors in view of COVID-19 outbreak <a href="#">For further details, click here</a> </p> <br>
+                   
+                   <p>On account of the complete lockdown imposed by Government of Karnataka on movement of people, the e-Filing Call Center is temporarily impacted. All taxpayers are requested to use the e-Nivaran functionality to request for assistance which shall be provided expeditiously. </p> <br>
+                   
+                   <p>Dear Taxpayers, Considering COVID-19, we have taken precautionary steps demanded by the situation. Our Helpdesk shall remain open with reduced staff, We urge you to stay safe. </p> <br>
+              
+               </div>
+              
+               <div class="faq">
+                    <span>Quick Links</span>
+                     <ul>
+                         <li>=><a href="#">File DTVSV Form </a><span class="new">New</span></li>
+                         <li>=>Instant PAN through Aadhar</li>
+                         <li>=>Tax Calculator</li>
+                         <li>=>Link Aadhar</li>
+                         <li>=>e-Verify Return</li>
+                         <li>=>ITR Status</li>
+                         <li>=>Verify Your Pan Details</li>
+                         <li>=>Tax Calender</li>
+                     </ul>
+                   <span>Download</span>
+                    <ul>
+                         <li>=>FAQs on Return Filing</li>
+                         <li>=>DSC Management Software</li>
+                         <li>=>IT Return Preparation Software</li>
+                         <li>=>e-Verify Return</li>
+                         <li>=>ther Forms Preparation Software</li>
+                    </ul>
+                </div>
+              
+          </div>
+       </div>    
+              
+      </div>
+    <script>
+	
+	    const submit=document.querySelector(".submit");
+submit.addEventListener("click",(e)=>{
+  if(e.target.style.background==="green"){
+    e.target.style.background="rgb(206, 57, 92)";
+  }
+    else{
+         e.target.style.background="green";
+    }
+})
+const news=document.querySelector(".new");
+setInterval(()=>{
+    //news.style.color='red';
+    if(news.style.color==="red")
+         {
+             news.style.color="black";
+             news.style.fontSize="20px";
+         }
+    else{
+             news.style.color="red";
+            news.style.fontSize="15px";
+     }
+    
+},500);
+
+const newsUpadte=document.querySelector("ul li a");
+setInterval(()=>{
+    if(newsUpadte.style.color==="rgba(0,0,0,0.9)")
+        {
+             newsUpadte.style.color="rgba(0,0,0,0.5)";
+        }
+    else{
+          newsUpadte.style.color="rgba(0,0,0,0.9)";
+      }
+},1000);
+	
+	</script>
+</body>
